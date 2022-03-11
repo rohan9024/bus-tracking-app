@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "496995928503",
+    "project_id": "bus-tracking-system-cec07",
+    "storage_bucket": "bus-tracking-system-cec07.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:496995928503:android:a8e614a3e332ef8beac032",
+        "android_client_info": {
+          "package_name": "host.exp.exponent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "496995928503-hl6ildp8mchp2k4psakqip2a9jovfq2f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDF4d_oi_DRfDarY3XhGhxSUH0L0_6JYzY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "496995928503-hl6ildp8mchp2k4psakqip2a9jovfq2f.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "496995928503-b4sde902ctph68h8k4pea5buffdq3hnc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "host.exp.exponent"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
