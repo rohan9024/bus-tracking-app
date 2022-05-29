@@ -45,8 +45,8 @@ const StackNavigator = () => {
                 }
                 {!USER && !DRIVER && (
                     <>
-                        {/* <Stack.Screen name="Starter" component={Starter} options={{ headerShown: false }} /> */}
-                        {/* <Stack.Screen name="Signup" component={Signup} options={{ headerShown: false }} /> */}
+                        <Stack.Screen name="Starter" component={Starter} options={{ headerShown: false }} /> 
+                        <Stack.Screen name="Signup" component={Signup} options={{ headerShown: false }} />
                         <Stack.Screen name="Role" component={Role} options={{ headerShown: false }} />
                         <Stack.Screen name="Role2" component={Role2} options={{ headerShown: false }} />
                         <Stack.Screen name="DriverLogin" component={DriverLogin} options={{ headerShown: false }} />
