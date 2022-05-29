@@ -5,16 +5,14 @@ import Starter from './screens/Starter';
 import Login from './screens/Login';
 import Signup from './screens/Signup';
 import StackNavigator from './StackNavigator';
-import { AuthProvider } from "./hooks/useAuth"
+import React from "react"
 
 export default function App() {
   const Stack = createNativeStackNavigator();
 
   return (
     <NavigationContainer>
-      <AuthProvider>
-        <StackNavigator />
-      </AuthProvider>
+      <StackNavigator />
     </NavigationContainer>
   );
 }

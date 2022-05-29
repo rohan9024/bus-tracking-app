@@ -34,7 +34,7 @@ const Role2 = () => {
 
             </View>
             <View>
-                <Text style={{ fontSize: 20, marginTop: 36 }}>What is your Role?</Text>
+                <Text style={{ fontSize: 20, marginTop: 36, fontWeight: 'bold' }}>What is your Role?</Text>
             </View>
 
         </View>

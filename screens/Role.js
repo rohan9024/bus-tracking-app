@@ -11,7 +11,7 @@ const Role = () => {
         <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', display: 'flex' }}>
 
             <View style={{ display: 'flex', flexDirection: 'row', }}>
-                <TouchableOpacity onPress={() => navigation.push('Login')}>
+                <TouchableOpacity onPress={() => navigation.push('DriverLogin')}>
                     <View style={{ display: 'flex', flexDirection: 'column', borderColor: '#ef2e46', borderWidth: 2, padding: 20, borderRadius: 20, marginRight: 20 }}>
                         <Image
                             source={driver}
@@ -21,7 +21,7 @@ const Role = () => {
                         <Text style={{ marginLeft: 35, fontSize: 20, marginTop: 10 }}>Driver</Text>
                     </View>
                 </TouchableOpacity>
-                <TouchableOpacity onPress={() => navigation.push('Login')}>
+                <TouchableOpacity onPress={() => navigation.push('UserLogin')}>
                     <View style={{ display: 'flex', flexDirection: 'column', borderColor: '#ef2e46', borderWidth: 2, padding: 20, borderRadius: 20 }}>
                         <Image
                             source={user}
@@ -34,7 +34,7 @@ const Role = () => {
 
             </View>
             <View>
-                <Text style={{ fontSize: 20, marginTop: 36 }}>What is your Role?</Text>
+                <Text style={{ fontSize: 20, marginTop: 36, fontWeight: 'bold' }}>What is your Role?</Text>
             </View>
 
         </View>
