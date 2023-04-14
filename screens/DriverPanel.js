@@ -4,7 +4,7 @@ import * as Location from 'expo-location';
 import { updateProfile } from 'firebase/auth';
 import { doc, setDoc, updateDoc, onSnapshot } from 'firebase/firestore';
 import { db } from './firebase';
-import MapView from 'react-native-maps';
+import MapView, { Marker } from 'react-native-maps';
 import pin from "../assets/pin.png"
 import bus from "../assets/bus.png"
 
@@ -19,14 +19,14 @@ function DriverPanel() {
             return;
         }
 
-        let location = await Location.getCurrentPositionAsync({});
+        let location = await Location.getCurrentPositionAsync({ accuracy: Location.Accuracy.Highest, maximumAge: 10000 });
         setLocation(location);
 
         const driverRef = doc(db, "driver", "3YPIokI5C6mD6yu9utE6");
 
         await updateDoc(driverRef, {
-            latitude: location.coords["latitude"],
-            longitude: location.coords["longitude"]
+            latitude: location.coords.latitude,
+            longitude: location.coords.longitude
         });
 
     }
@@ -54,18 +54,18 @@ function DriverPanel() {
                     <MapView style={styles.map}
                         loadingEnabled={true}
                         region={{
-                            latitude: location.coords["latitude"],
-                            longitude: location.coords["longitude"],
+                            latitude: location.coords.latitude,
+                            longitude: location.coords.longitude,
                             latitudeDelta: 0.300,
                             longitudeDelta: 0.300,
                         }}
 
                     >
                         {/* Driver Location */}
-                        <MapView.Marker
+                        <Marker
                             coordinate={{
-                                latitude: location.coords["latitude"],
-                                longitude: location.coords["longitude"]
+                                latitude: location.coords.latitude,
+                                longitude: location.coords.longitude
                             }}
                             title={"Worli Village-Dadar"}
                         >
@@ -73,7 +73,7 @@ function DriverPanel() {
                                 source={bus}
                                 style={{ height: 30, width: 30 }} />
 
-                        </MapView.Marker>
+                        </Marker>
 
 
                     </MapView>

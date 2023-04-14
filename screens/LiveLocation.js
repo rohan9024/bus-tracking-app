@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import MapView from 'react-native-maps';
+import MapView, { Marker } from 'react-native-maps';
 import { StyleSheet, Text, View, Dimensions, Image } from 'react-native';
 import pin from "../assets/pin.png"
 import bus from "../assets/bus.png"
@@ -38,7 +38,7 @@ export default function LiveLocation() {
 
             >
                 {/* Driver Location */}
-                <MapView.Marker
+                <Marker
                     coordinate={{
                         latitude: latitude,
                         longitude: longitude
@@ -49,8 +49,8 @@ export default function LiveLocation() {
                         source={bus}
                         style={{ height: 30, width: 30 }} />
 
-                </MapView.Marker>
-                <MapView.Marker
+                </Marker>
+                <Marker
                     coordinate={{
                         latitude: latitude2,
                         longitude: longitude2
@@ -61,7 +61,7 @@ export default function LiveLocation() {
                         source={bus}
                         style={{ height: 30, width: 30 }} />
 
-                </MapView.Marker>
+                </Marker>
 
             </MapView>
         </View>

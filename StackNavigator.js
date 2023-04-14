@@ -16,6 +16,8 @@ import DriverPanel from './screens/DriverPanel';
 import { UserContext } from "./Contexts/UserContext.js"
 import UserPanel from './screens/UserPanel';
 import LiveLocation from './screens/LiveLocation';
+import Maptest from "./screens/Maptest"
+
 
 const Stack = createNativeStackNavigator();
 
@@ -49,6 +51,7 @@ const StackNavigator = () => {
                         <Stack.Screen name="Signup" component={Signup} options={{ headerShown: false }} />
                         <Stack.Screen name="Role" component={Role} options={{ headerShown: false }} />
                         <Stack.Screen name="Role2" component={Role2} options={{ headerShown: false }} />
+                        {/* <Stack.Screen name="DriverLogin" component={Maptest} options={{ headerShown: false }} /> */}
                         <Stack.Screen name="DriverLogin" component={DriverLogin} options={{ headerShown: false }} />
                         <Stack.Screen name="UserLogin" component={UserLogin} options={{ headerShown: false }} />
                     </>

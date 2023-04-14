@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import MapView from 'react-native-maps';
+import MapView, { Marker } from 'react-native-maps';
 import { StyleSheet, Text, View, Dimensions, Image } from 'react-native';
 import pin from "../assets/pin.png"
 import bus from "../assets/bus.png"
@@ -33,7 +33,7 @@ export default function App() {
             >
 
 
-                <MapView.Marker
+                <Marker
                     coordinate={{
                         latitude: 19.01692721232519,
                         longitude: 72.82021217419488
@@ -45,8 +45,8 @@ export default function App() {
                         source={pin}
                         style={{ height: 30, width: 30 }} />
 
-                </MapView.Marker>
-                <MapView.Marker
+                </Marker>
+                <Marker
                     coordinate={{
                         latitude: 19.016041459137362,
                         longitude: 72.82297085405676
@@ -58,8 +58,8 @@ export default function App() {
                         source={pin}
                         style={{ height: 30, width: 30 }} />
 
-                </MapView.Marker>
-                <MapView.Marker
+                </Marker>
+                <Marker
                     coordinate={{
                         latitude: 19.013980567869705,
                         longitude: 72.82357563940211
@@ -71,8 +71,8 @@ export default function App() {
                         source={pin}
                         style={{ height: 30, width: 30 }} />
 
-                </MapView.Marker>
-                <MapView.Marker
+                </Marker>
+                <Marker
                     coordinate={{
                         latitude: 19.014721010767772,
                         longitude: 72.82630805109417
@@ -84,8 +84,8 @@ export default function App() {
                         source={pin}
                         style={{ height: 30, width: 30 }} />
 
-                </MapView.Marker>
-                <MapView.Marker
+                </Marker>
+                <Marker
                     coordinate={{
                         latitude: 19.017888423809072,
                         longitude: 72.83154662369725
@@ -97,8 +97,8 @@ export default function App() {
                         source={pin}
                         style={{ height: 30, width: 30 }} />
 
-                </MapView.Marker>
-                <MapView.Marker
+                </Marker>
+                <Marker
                     coordinate={{
                         latitude: 19.01867409744653,
                         longitude: 72.83365249508746
@@ -110,8 +110,8 @@ export default function App() {
                         source={pin}
                         style={{ height: 30, width: 30 }} />
 
-                </MapView.Marker>
-                <MapView.Marker
+                </Marker>
+                <Marker
                     coordinate={{
                         latitude: 19.01983820390244,
                         longitude: 72.83739433271312
@@ -123,8 +123,8 @@ export default function App() {
                         source={pin}
                         style={{ height: 30, width: 30 }} />
 
-                </MapView.Marker>
-                <MapView.Marker
+                </Marker>
+                <Marker
                     coordinate={{
                         latitude: 19.01976827549303,
                         longitude: 72.8402398697094
@@ -136,8 +136,8 @@ export default function App() {
                         source={pin}
                         style={{ height: 30, width: 30 }} />
 
-                </MapView.Marker>
-                <MapView.Marker
+                </Marker>
+                <Marker
                     coordinate={{
                         latitude: 19.02173037370007,
                         longitude: 72.84222391385191
@@ -149,12 +149,12 @@ export default function App() {
                         source={pin}
                         style={{ height: 30, width: 30 }} />
 
-                </MapView.Marker>
+                </Marker>
 
 
 
                 {/* Driver Location */}
-                <MapView.Marker
+                <Marker
                     coordinate={{
                         latitude: latitude,
                         longitude: longitude
@@ -166,7 +166,7 @@ export default function App() {
                         source={bus}
                         style={{ height: 30, width: 30 }} />
 
-                </MapView.Marker>
+                </Marker>
 
             </MapView>
         </View>

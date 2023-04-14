@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import MapView from 'react-native-maps';
+import MapView, { Marker } from 'react-native-maps';
 import { StyleSheet, Text, View, Dimensions, Image } from 'react-native';
 import pin from "../assets/pin.png"
 import bus from "../assets/bus.png"
@@ -32,7 +32,7 @@ export default function App() {
 
             >
 
-                <MapView.Marker
+                <Marker
                     coordinate={{
                         longitude: 72.87091250543872,
                         latitude: 19.02161745
@@ -46,8 +46,8 @@ export default function App() {
                         style={{ height: 30, width: 30 }} />
 
 
-                </MapView.Marker>
-                <MapView.Marker
+                </Marker>
+                <Marker
                     coordinate={{
                         latitude: 19.02152041274678,
                         longitude: 72.86940177300747
@@ -59,8 +59,8 @@ export default function App() {
                         source={pin}
                         style={{ height: 30, width: 30 }} />
 
-                </MapView.Marker>
-                <MapView.Marker
+                </Marker>
+                <Marker
                     coordinate={{
                         latitude: 19.02181904276303,
                         longitude: 72.86617329682444
@@ -72,8 +72,8 @@ export default function App() {
                         source={pin}
                         style={{ height: 30, width: 30 }} />
 
-                </MapView.Marker>
-                <MapView.Marker
+                </Marker>
+                <Marker
                     coordinate={{
                         latitude: 19.02181904276303,
                         longitude: 72.86617329682444
@@ -85,8 +85,8 @@ export default function App() {
                         source={pin}
                         style={{ height: 30, width: 30 }} />
 
-                </MapView.Marker>
-                <MapView.Marker
+                </Marker>
+                <Marker
                     coordinate={{
                         latitude: 19.017349428205318,
                         longitude: 72.86498178511765
@@ -98,8 +98,8 @@ export default function App() {
                         source={pin}
                         style={{ height: 30, width: 30 }} />
 
-                </MapView.Marker>
-                <MapView.Marker
+                </Marker>
+                <Marker
                     coordinate={{
                         latitude: 19.018552338564348,
                         longitude: 72.86251737981269
@@ -111,8 +111,8 @@ export default function App() {
                         source={pin}
                         style={{ height: 30, width: 30 }} />
 
-                </MapView.Marker>
-                <MapView.Marker
+                </Marker>
+                <Marker
                     coordinate={{
                         latitude: 19.019353580599443,
                         longitude: 72.85674130461476
@@ -124,8 +124,8 @@ export default function App() {
                         source={pin}
                         style={{ height: 30, width: 30 }} />
 
-                </MapView.Marker>
-                <MapView.Marker
+                </Marker>
+                <Marker
                     coordinate={{
                         latitude: 19.016905216928386,
                         longitude: 72.85891759428597
@@ -137,12 +137,12 @@ export default function App() {
                         source={pin}
                         style={{ height: 30, width: 30 }} />
 
-                </MapView.Marker>
+                </Marker>
 
 
 
 
-                <MapView.Marker
+                <Marker
                     coordinate={{
                         latitude: latitude,
                         longitude: longitude
@@ -154,7 +154,7 @@ export default function App() {
                         source={bus}
                         style={{ height: 30, width: 30 }} />
 
-                </MapView.Marker>
+                </Marker>
 
             </MapView>
         </View>
